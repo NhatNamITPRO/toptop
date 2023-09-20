@@ -1,4 +1,5 @@
-import { HomePage, FollowingPage } from '~/pages';
+import { HomePage, FollowingPage,Upload,Profile } from '~/pages';
+import HeaderOnly from '~/components/Layouts/HeaderOnly';
 const publicRoutes = [
     {
         path: '/',
@@ -7,6 +8,16 @@ const publicRoutes = [
     {
         path: '/following',
         component: FollowingPage,
+    }, 
+    {
+        path: '/upload',
+        component: Upload,
+        layout:HeaderOnly
+    },    
+    {
+        path: '/profile',
+        component: Profile,
+        layout: null
     },
 ];
 const privateRoutes = [];
